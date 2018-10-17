@@ -3,19 +3,99 @@
 
 <head>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>王堉宸 作品集</title>
+
+
 </head>
 
-<body>
-    hello<br>
-    <p>123</p>
+<body data-target="#navbar-spy" data-spy="scroll">
+
+    <div>
+        <nav class="nav navbar-inverse navbar-fixed-top" id="navbar-spy">
+            <div class="">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">首頁</a></li>
+                        <li class="nav-item dropdown">
+                            <a class=" dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                作品集
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">資管系設備教室租借系統</a>
+                                <a class="dropdown-item" href="#">防賴床鬧鐘</a>
+                                <a class="dropdown-item" href="#">都4傳說</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <div class="container">
+        <div class="row row-offcanvas row-offcanvas-right">
+            <div class="col-xs-12 col-sm-9">
+                <p class="pull-right visible-xs">
+                    <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+                </p>
+                <div class="jumbotron">
+                    <h2>我叫王堉宸，畢業於亞東技術學院資訊管理系</h2>
+                    <h2>以下是我在學期間的作品</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6 col-lg-4">
+                        <h3 style="text-align:center">專題 AiR - 虛擬空間看板</h3>
+                        <p> Unity 開發，AR 結合室內定位的 APP，主要應用在室內導覽，或是尋寶遊戲上。利用 Beacon 所發出的藍芽訊號來計算出使用者在空間的三維座標。 </p>
+                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-6 col-lg-4">
+                        <h3 style="text-align:center">資管系設備租借系統</h3>
+                        <p>亞東資管系設備、教室的租借系統，是使用HTML、JavaScript，和 PHP 製作的，使用讀卡機和學生證來當作驗證的方式，這套系統目前在系上測試使用中。</p>
+                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-6 col-lg-4">
+                        <h3 style="text-align:center">防賴床鬧鐘 APP</h3>
+                        <p>行動裝置程式設計期末作業中用 Java 開發防賴床鬧鐘的 Android APP，可設定英文單字測驗或是數學四則運算當作關閉的方法。</p>
+                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-6 col-lg-4">
+                        <h3 style="text-align:center">都4傳說</h3>
+                        <p>網頁設計課時製作介紹各國都市傳說的網站，主要是 HTML 和 CSS，並使用到 jQuery 的動畫特效。</p>
+                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-6 col-lg-4">
+                        <h3 style="text-align:center">電子相簿</h3>
+                        <p>物件導向設計課以 WinForm C# 製作的電子相簿，可設定相片輪播。</p>
+                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
+                    </div>
+                    <div class="col-xs-6 col-lg-4">
+                        <h3 style="text-align:center">猜數字、走迷宮</h3>
+                        <p>程式設計課寫的兩個小作業，用 C# Console 製作，分別是猜數字 1A2B 和老鼠走迷宮。</p>
+                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
 
 </body>
 
