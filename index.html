@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -17,80 +18,127 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle bg-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      作品集
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-            </li>
-          </ul>
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="research.html">專題研究</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="imSystem.html">資管系系統</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alarm.html">防賴床鬧鐘</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dataAnalysis.html">資料分析</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="legend.html">都4傳說</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="snake0.html">貪食蛇</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dataAnalysis.html">C# 作業</a>
+                </li>
+            </ul>
         </div>
-      </nav>
+    </nav>
+
+    <br>
 
     <div class="container">
-        <div class="row row-offcanvas row-offcanvas-right">
-            <div class="col-xs-12 col-sm-9">
-                <div class="jumbotron">
-                    <h2>我叫王堉宸，畢業於亞東技術學院資訊管理系</h2>
-                    <h2>以下是我在學期間的作品</h2>
-                </div>
-                <div class="row">
-                    <div class="col-xs-6 col-lg-4">
-                        <h3 style="text-align:center">專題 AiR - 虛擬空間看板</h3>
-                        <p> Unity 開發，AR 結合室內定位的 APP，主要應用在室內導覽，或是尋寶遊戲上。利用 Beacon 所發出的藍芽訊號來計算出使用者在空間的三維座標。 </p>
-                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
-                    </div>
-                    <div class="col-xs-6 col-lg-4">
-                        <h3 style="text-align:center">資管系設備租借系統</h3>
-                        <p>亞東資管系設備、教室的租借系統，是使用HTML、JavaScript，和 PHP 製作的，使用讀卡機和學生證來當作驗證的方式，這套系統目前在系上測試使用中。</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
-                    </div>
-                    <div class="col-xs-6 col-lg-4">
-                        <h3 style="text-align:center">防賴床鬧鐘 APP</h3>
-                        <p>行動裝置程式設計期末作業中用 Java 開發防賴床鬧鐘的 Android APP，可設定英文單字測驗或是數學四則運算當作關閉的方法。</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
-                    </div>
-                    <div class="col-xs-6 col-lg-4">
-                        <h3 style="text-align:center">都4傳說</h3>
-                        <p>網頁設計課時製作介紹各國都市傳說的網站，主要是 HTML 和 CSS，並使用到 jQuery 的動畫特效。</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
-                    </div>
-                    <div class="col-xs-6 col-lg-4">
-                        <h3 style="text-align:center">電子相簿</h3>
-                        <p>物件導向設計課以 WinForm C# 製作的電子相簿，可設定相片輪播。</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
-                    </div>
-                    <div class="col-xs-6 col-lg-4">
-                        <h3 style="text-align:center">猜數字、走迷宮</h3>
-                        <p>程式設計課寫的兩個小作業，用 C# Console 製作，分別是猜數字 1A2B 和老鼠走迷宮。</p>
-                        <p><a class="btn btn-default" href="#" role="button">查看更多 &raquo;</a></p>
+        <div class="col-xs-12 col-sm-12">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">專題研究 AiR - 虛擬空間看板</h5>
+                            <p class="card-text">Unity 開發，前端為 C# 後端為 PHP & MySQL 的 AR APP，用 Beacon 的藍芽訊號來計算空間座標，來達成室內定位。</p>
+                            <a href="research.html" class="btn btn-primary">查看更多</a>
+                        </div>
                     </div>
                 </div>
-
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">資管系設備租借系統</h5>
+                            <p class="card-text">亞東資管系設備、教室的租借系統，是使用HTML、JavaScript，和 PHP 製作的，使用讀卡機和學生證來當作驗證的方式。</p>
+                            <a href="imSystem.html" class="btn btn-primary">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">防賴床鬧鐘 APP</h5>
+                            <p class="card-text">Java 開發防賴床鬧鐘的 Android APP，可設定英文單字測驗或是數學四則運算當作關閉的方法。</p>
+                            <a href="alarm.html" class="btn btn-primary">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">資料分析</h5>
+                            <p class="card-text">用 R Studio 搭配 Shiny 套件，以政府公開資料分析，各車輛肇事比例與原因。</p>
+                            <a href="dataAnalysis.html" class="btn btn-primary">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">都4傳說</h5>
+                            <p class="card-text">介紹各國都市傳說的網站，主要以 HTML 和 CSS，並使用到 jQuery 的動畫特效</p>
+                            <a href="legend.html" class="btn btn-primary">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">貪食蛇</h5>
+                            <p class="card-text">以 Eclipse 用 Java Applet 開發的貪食蛇遊戲。</p>
+                            <a href="snake.html" class="btn btn-primary">查看更多</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">C# 作業</h5>
+                            <p class="card-text">早期的一些 C# WinForm Console 的作業。</p>
+                            <a href="cSharp.html" class="btn btn-primary">查看更多</a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
-            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-                crossorigin="anonymous"></script>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="fcontainer">
+            <span class="text-muted">2018 Copyright 王堉宸</span>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 
 </body>
 
