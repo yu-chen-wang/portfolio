@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/lightbox.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>王堉宸 作品集</title>
+    <title>專題研究 AiR</title>
 
 
 </head>
@@ -54,19 +55,69 @@
 
     <br>
 
+    <div class="m-auto p-3 border border-info" style="width:65%; background-color: white;">
+        <p>專題名稱：AiR 擴增實境與空間定位的結合應用</p>
+        <p>開發工具及語言：Unity & C# 、 PHP & MySQL</p>
+        <p>作品說明</p>
+        <p>由接收 iBeacon 裝置發出的訊號加以計算，來進行室內定位，並且在攜帶裝置的螢幕上以 AR 的方式顯示 3D 圖形或訊息，期望能應用於活動與導覽用途</p>
+        <p>專題成果</p>
+        <ol>
+            <li>通過科技部大專學生研究計畫補助</li>
+            <li>2017第22屆全國大專校院資訊應用服務創新競賽 – 資訊技術應用組佳作</li>
+            <li>全國計算機會議上口頭報告</li>
+        </ol>
+        <P>負責部分：在專題中我負責製作介面與功能、串接後端 PHP 的 API、建立 3D 模型</P>
+
+        <br>
+        <p>執行畫面</p>
+
+        <p>軟體開始執行後，若接收到特定iBeacon裝置，就會自動計算出目前手機所在的空間座標，進而搭配攝影機與3D物件呈現在畫面上</p>
+
+        <div class="m-auto">
+            <a href='images/research1.jpg' data-lightbox='research' data-title='主畫面'>
+                <img src='images/research1.jpg' class="rounded mx-auto d-block">
+            </a>
+            <br>
+
+            <a href='images/research2.jpg' data-lightbox='research' data-title='新增物件中'>
+                <img src='images/research2.jpg' class="rounded mx-auto d-block">
+            </a>
+            <br>
+
+            <a href='images/research3.jpg' data-lightbox='research' data-title='新增物件後'>
+                <img src='images/research3.jpg' class="rounded mx-auto d-block">
+            </a>
+            <br>
+
+            <a href='images/research4.jpg' data-lightbox='research' data-title='查看物件'>
+                <img src='images/research4.jpg' class="rounded mx-auto d-block">
+            </a>
+            <br>
+
+            <p>只要點擊在螢幕內所見的物件，就可以查看物件所留下的訊息內容、或是進行修改刪除等</p>
+        </div>
+
+    </div>
+
+
     <footer class="footer">
         <div class="fcontainer">
             <span class="text-muted">2018 Copyright 王堉宸</span>
         </div>
     </footer>
 
+
+
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+
+    <script src="js/lightbox-plus-jquery.js"></script>
 
 </body>
 

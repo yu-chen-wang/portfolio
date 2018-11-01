@@ -6,6 +6,8 @@ html {
 }
 body {
   margin-bottom: 60px; /* Margin bottom by footer height */
+  background-image:url('../images/bg.png');
+  background-repeat:repeat;
 }
 .footer {
   position: absolute;
@@ -30,4 +32,8 @@ body {
 
 .card{
   margin-bottom: 10px;
+}
+
+.image{
+  width: 600px;
 }
