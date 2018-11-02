@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,27 +35,29 @@
                     <a class="nav-link" href="imSystem.html">資管系系統</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="alarm.html">防賴床鬧鐘</a>
+                    <a class="nav-link" href="alarm.html">賴床終結者</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="dataAnalysis.html">資料分析</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="legend.html">都4傳說</a>
+                    <a class="nav-link" href="legend.html">都４傳說</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="snake0.html">貪食蛇</a>
+                    <a class="nav-link" href="snake.html">貪食蛇</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="dataAnalysis.html">C# 作業</a>
+                    <a class="nav-link" href="cSharp.html">C# 作業</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <br>
+    <br>
+    <br>
 
-    <div class="m-auto p-3 border border-info" style="width:65%; background-color: white;">
+    <div class="m-auto p-3 border border-info" style="width:70%; background-color: white">
         <p>專題名稱：AiR 擴增實境與空間定位的結合應用</p>
         <p>開發工具及語言：Unity & C# 、 PHP & MySQL</p>
         <p>作品說明</p>
@@ -74,27 +76,26 @@
         <p>軟體開始執行後，若接收到特定iBeacon裝置，就會自動計算出目前手機所在的空間座標，進而搭配攝影機與3D物件呈現在畫面上</p>
 
         <div class="m-auto">
-            <a href='images/research1.jpg' data-lightbox='research' data-title='主畫面'>
-                <img src='images/research1.jpg' class="rounded mx-auto d-block">
+            <a href='images/research/research1.jpg' data-lightbox='research' data-title='主畫面'>
+                <img src='images/research/research1.jpg' class="rounded mx-auto d-block">
             </a>
-            <br>
+            <p style="text-align:center">主畫面</p>
 
-            <a href='images/research2.jpg' data-lightbox='research' data-title='新增物件中'>
-                <img src='images/research2.jpg' class="rounded mx-auto d-block">
+            <a href='images/research/research2.jpg' data-lightbox='research' data-title='新增物件中'>
+                <img src='images/research/research2.jpg' class="rounded mx-auto d-block">
             </a>
-            <br>
+            <p style="text-align:center">新增物件中</p>
 
-            <a href='images/research3.jpg' data-lightbox='research' data-title='新增物件後'>
-                <img src='images/research3.jpg' class="rounded mx-auto d-block">
+            <a href='images/research/research3.jpg' data-lightbox='research' data-title='新增物件後'>
+                <img src='images/research/research3.jpg' class="rounded mx-auto d-block">
             </a>
-            <br>
+            <p style="text-align:center">新增物件後</p>
 
-            <a href='images/research4.jpg' data-lightbox='research' data-title='查看物件'>
-                <img src='images/research4.jpg' class="rounded mx-auto d-block">
+            <a href='images/research/research4.jpg' data-lightbox='research' data-title='查看物件'>
+                <img src='images/research/research4.jpg' class="rounded mx-auto d-block">
             </a>
-            <br>
+            <p style="text-align:center">只要點擊在螢幕內所見的物件，就可以查看物件所留下的訊息內容、或是進行修改刪除等</p>
 
-            <p>只要點擊在螢幕內所見的物件，就可以查看物件所留下的訊息內容、或是進行修改刪除等</p>
         </div>
 
     </div>
@@ -110,7 +111,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -118,6 +119,22 @@
         crossorigin="anonymous"></script>
 
     <script src="js/lightbox-plus-jquery.js"></script>
+
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+        $(function () {
+            $('#BackTop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 333);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
 
 </body>
 

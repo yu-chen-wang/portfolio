@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>貪食蛇</title>
+
+
+</head>
+
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="research.html">專題研究</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="imSystem.html">資管系系統</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alarm.html">賴床終結者</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dataAnalysis.html">資料分析</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="legend.html">都４傳說</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="snake.html">貪食蛇</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cSharp.html">C# 作業</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="m-auto p-3 border border-info" style="width:70%; background-color: white;">
+        <p>專案名稱：貪食蛇之催款魔</p>
+        <p>開發工具及語言：Eclipse & Java</p>
+        <p>作品說明</p>
+        <p>以 Java Applet 開發的貪食蛇遊戲，可單機雙人遊玩，名稱由來是哈利波特裡的催狂魔，不斷追逐著＄</p>
+        <br>
+
+        <p>執行畫面</p>
+        <br>
+
+        <div class="m-auto">
+            <a href='images/snake/snake1.jpg' data-lightbox='image' data-title='開始畫面'>
+                <img src='images/snake/snake1.jpg' class="rounded mx-auto d-block image">
+            </a>
+            <p style="text-align:center">開始畫面</p>
+
+            <a href='images/snake/snake2.jpg' data-lightbox='image' data-title='死亡畫面'>
+                <img src='images/snake/snake2.jpg' class="rounded mx-auto d-block image">
+            </a>
+            <p style="text-align:center">死亡畫面</p>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="fcontainer">
+            <span class="text-muted">2018 Copyright 王堉宸</span>
+        </div>
+    </footer>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+    <script src="js/lightbox-plus-jquery.js"></script>
+
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+        $(function () {
+            $('#BackTop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 333);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
+
+</body>
+
+</html>

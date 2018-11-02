@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -35,27 +35,29 @@
                     <a class="nav-link" href="imSystem.html">資管系系統</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="alarm.html">防賴床鬧鐘</a>
+                    <a class="nav-link" href="alarm.html">賴床終結者</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="dataAnalysis.html">資料分析</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="legend.html">都4傳說</a>
+                    <a class="nav-link" href="legend.html">都４傳說</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="snake0.html">貪食蛇</a>
+                    <a class="nav-link" href="snake.html">貪食蛇</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="dataAnalysis.html">C# 作業</a>
+                    <a class="nav-link" href="cSharp.html">C# 作業</a>
                 </li>
             </ul>
         </div>
     </nav>
 
     <br>
+    <br>
+    <br>
 
-    <div class="m-auto p-3 border border-info" style="width:65%; background-color: white;">
+    <div class="m-auto p-3 border border-info" style="width:70%; background-color: white;">
         <p>專案名稱：資管系設備借還系統</p>
         <p>開發工具及語言：前端 HTML CSS JavaScript、後端 PHP & MySQL</p>
         <p>作品說明</p>
@@ -70,23 +72,20 @@
         <p>軟體開始執行後，若接收到特定iBeacon裝置，就會自動計算出目前手機所在的空間座標，進而搭配攝影機與3D物件呈現在畫面上</p>
 
         <div class="m-auto">
-            <a href='images/imSystem1.jpg' data-lightbox='image' data-title='首頁'>
-                <img src='images/imSystem1.jpg' class="rounded mx-auto d-block image">
+            <a href='images/imSystem/imSystem1.jpg' data-lightbox='image' data-title='首頁'>
+                <img src='images/imSystem/imSystem1.jpg' class="rounded mx-auto d-block image">
             </a>
             <p style="text-align:center">登入畫面</p>
-            <br>
 
-            <a href='images/imSystem2.jpg' data-lightbox='image' data-title='借用物品'>
-                <img src='images/imSystem2.jpg' class="rounded mx-auto d-block image">
+            <a href='images/imSystem/imSystem2.jpg' data-lightbox='image' data-title='借用物品'>
+                <img src='images/imSystem/imSystem2.jpg' class="rounded mx-auto d-block image">
             </a>
             <p style="text-align:center">借用畫面</p>
-            <br>
 
-            <a href='images/imSystem3.jpg' data-lightbox='image' data-title='帳號資訊'>
-                <img src='images/imSystem3.jpg' class="rounded mx-auto d-block image">
+            <a href='images/imSystem/imSystem3.jpg' data-lightbox='image' data-title='帳號資訊'>
+                <img src='images/imSystem/imSystem3.jpg' class="rounded mx-auto d-block image">
             </a>
             <p style="text-align:center">個人帳號資訊</p>
-            <br>
 
         </div>
 
@@ -103,7 +102,7 @@
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
@@ -111,6 +110,22 @@
         crossorigin="anonymous"></script>
 
     <script src="js/lightbox-plus-jquery.js"></script>
+
+    <button type="button" id="BackTop" class="toTop-arrow"></button>
+    <script>
+        $(function () {
+            $('#BackTop').click(function () {
+                $('html,body').animate({ scrollTop: 0 }, 333);
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('#BackTop').fadeIn(222);
+                } else {
+                    $('#BackTop').stop().fadeOut(222);
+                }
+            }).scroll();
+        });
+    </script>
 
 </body>
 
